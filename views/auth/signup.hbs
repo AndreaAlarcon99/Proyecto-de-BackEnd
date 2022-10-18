@@ -1,0 +1,22 @@
+<div id="signin">
+  <form action="/auth/signup" method="POST">
+    {{#if errorMessage}}
+    <div class="alert alert-danger" role="alert">
+      {{errorMessage}}
+    </div>
+    {{/if}}
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Usuario" name="username" autocomplete="off">
+      <label for="floatingInput">Usuario</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
+      <label for="floatingPassword">Contraseña</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="passwordRepeat">
+      <label for="floatingPassword">Repetir contraseña</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+  </form>
+</div>
